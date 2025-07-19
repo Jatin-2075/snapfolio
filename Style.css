@@ -52,13 +52,13 @@ footer{
 }
 
 footer button{
-    background-color: rgb(109, 109, 109);
+    background-color: rgb(126, 126, 126);
     border: 0;
     margin: 5px;
 }
 
 
 footer button:hover{
-    border: 2px solid black;
+    border: 2px solid rgb(41, 41, 41);
     border-radius: 10px;
 }
