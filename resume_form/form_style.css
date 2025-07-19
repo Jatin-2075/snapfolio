@@ -1,0 +1,122 @@
+body {
+  background-color: gray;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+
+#details_form {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #102a55;
+  text-shadow: 0 0 10px white;
+}
+
+#div_name, #div_email, #div_mobile {
+  font-size: 1.5rem;
+  display: flex;
+  color:#002b64 ;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 10px white;
+}
+
+input {
+  padding: 0.3rem 0.6rem;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 2rem;
+  width: 16rem;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+input:hover{
+  box-shadow: 0 0 20px #539eff;
+}
+
+.submit{
+  background-color: #2e486a;
+  color: white;
+  border-radius: 5px;
+  border: 5px solid #2e486a;
+  font-size: 1.3rem;
+}
+
+.submit:hover{
+  box-shadow: 0 0 20px #2e486a;
+  background-color: white;
+  color: #2e486a;
+  border: 5px solid #ffffff;
+}
+
+.button_holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+textarea{
+  height: 180px;
+  width: 400px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+#section_education h3{
+  font-size: 2rem;
+  color: #2e486a;
+}
+
+.addeducation, .skill_add, .experienceadd {
+  background-color: #102a55;
+  color: white;
+  border: 10px solid #102a55;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.addeducation:hover, .skill_add:hover, .experienceadd:hover{
+  background-color: white;
+  color: #2e486a;
+  box-shadow: 0 0 10px rgb(87, 188, 255);
+  border: 10px solid white;
+}
+
+.home_button button{
+  color: white;
+  margin: 15px;
+  background-color: #ff0000;
+  font-size: 1.2rem;
+  border: 10px solid #ff0000;
+  border-radius: 3px;
+}
+
+.home_button button:hover{
+  background-color: white;
+  color: red;
+  border: 10px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px red;
+}
+
+
+.images{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
