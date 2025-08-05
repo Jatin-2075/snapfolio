@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Form</title>
+    <link rel="stylesheet" href="form_style.css" id="template-style">
+</head>
+<body>
+    <div class="form-about" id="section_details">
+        <h3 id="details_form">Basic Details</h3>
+        <div id="div_name"><h4>Name</h4><input id="name" type="text" placeholder="Enter your Name"/></div>
+        <div id="div_email"><h4>Mail</h4><input id="mail" type="text" placeholder="Enter your Mail"/></div>
+        <div id="div_mobile"><h4>Phone Number</h4><input id="number" type="tel" placeholder="Enter phone number"/></div>
+        <div class="button_holder">
+            <button onclick="showslide(1)" class="submit" type="button">Submit</button>
+        </div>
+    </div>
+
+    <div class="form-about" id="section_about" style="display: none;">
+        <h4>About</h4>
+        <textarea maxlength="200" id="about" placeholder="Enter about yourself"></textarea>
+        <div class="button_holder">
+            <button onclick="showslide(2)" class="submit" type="button">Submit</button>
+        </div>
+    </div>
+
+    <div class="form-about" id="section_education" style="display: none;">
+        <h3 >Education</h4>
+        <button class="addeducation" type="button">+ Add</button>
+        <div class="education">
+            <input class="degree" type="text" placeholder="Degree" />
+            <input class="institution" type="text" placeholder="Institution" />
+            <input class="year" type="text" placeholder="Year" />
+        </div>
+        <div class="addededucation"></div>
+        <div class="button_holder">
+            <button onclick="showslide(3)" type="button" class="submit">Submit</button>
+        </div>
+    </div>
+
+    <div class="form-about" id="section_skills" style="display: none;">
+        <h4>Skills</h4>
+        <button class="skill_add" type="button">+ Add</button>
+        <input class="skills_input" type="text" placeholder="Skill" />
+        <div class="addedskill"></div>
+        <div class="button_holder">
+            <button onclick="showslide(4)" class="submit" type="button">Submit</button>
+        </div>
+    </div>
+
+    <div class="form-about" id="section_experience" style="display: none;">
+        <h3>Experience</h3>
+        <button type="button" class="experienceadd">+ Add</button>
+        <div class="experience">
+            <input class="company" type="text" placeholder="Company Name" />
+            <input class="work" type="text" placeholder="What did you do" />
+            <input class="company_year" type="text" placeholder="Year" />
+        </div>
+        <div class="addedexperience"></div>
+        <div class="button_holder">
+            <button type="button" onclick="showslide(5); create_cv()" class="submit">Submit</button>
+        </div>
+    </div>
+
+     <div class="form-about" style="display: none;">
+        <div class="images" style="display: flex;">
+            <div>
+            <button onclick="showslide(6)  " type="button" data-template="cresume_builder_content/ss_template/01_template.css">
+                <img width="200rem" src="resme_template/OIP (1).webp">
+            </button>
+        </div>
+        <div class="images">
+            <button onclick="showslide(6)" type="button" data-template="resume_builder_content/css_template/02_template.css">
+                <img width="200rem" src="resme_template/OIP (2).webp">
+            </button>
+        </div>
+        <div class="images">
+            <button onclick="showslide(6)" type="button" data-template="resume_builder_content/css_template/03_template.css">
+                <img width="200rem" src="resme_template/OIP (3).webp">
+            </button>
+        </div>
+        <div class="images">
+            <button onclick="showslide(6)" type="button" data-template="resume_builder_content/css_template/04_template.css">
+                <img width="200rem" src="resme_template/OIP (4).png">
+            </button>
+        </div>
+        </div>
+    </div>
+
+    <div class="form-about" id="final_section" style="display: none;">
+        <div class="final_cv" id="resume-content"></div>
+            <button onclick="downloadresume()">📄 Download PDF</button>
+    </div>
+
+</body>
+    <div class="home_button"><a href="index.html"><button type="button">Home</button></a></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js_files/button.js"></script>
+    <script src="js_files/cv_final.js"></script>
+    <script src="js_files/input_form.js"></script>
+    <script src="js_files/show_not_show.js"></script>
+    
+
+</html>
